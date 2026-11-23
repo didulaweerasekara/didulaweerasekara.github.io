@@ -47,3 +47,13 @@ h2{font-size:clamp(44px,4.6vw,68px);letter-spacing:-.065em}
 .about-portrait{width:min(100%,370px);aspect-ratio:4/4.7;filter:saturate(.88)}
 @media(max-width:850px){.hero-classroom{min-height:690px}.hero-classroom-inner{padding-top:85px;padding-bottom:120px}.hero-classroom h1{font-size:clamp(57px,9vw,86px)}}
 @media(max-width:640px){.header-inner{height:69px}.hero-classroom{min-height:calc(90svh - 69px);background-position:55% center}.hero-classroom::before{background:linear-gradient(90deg,rgba(8,22,32,.86),rgba(8,22,32,.45)),linear-gradient(0deg,rgba(8,22,32,.62),transparent 44%)}.hero-classroom-inner{padding-top:80px;padding-bottom:110px}.hero-editorial-label{font-size:8px;letter-spacing:1.3px;gap:9px;margin-bottom:24px}.hero-editorial-line{width:20px}.hero-classroom h1{font-size:clamp(49px,11.8vw,72px);letter-spacing:-.07em;margin-bottom:25px}.hero-classroom-copy p{font-size:17px;line-height:1.6;max-width:300px;margin-bottom:30px}.hero-editorial-link{font-size:11px}.hero-editorial-bottom{bottom:24px;font-size:8px;letter-spacing:.8px}.hero-editorial-bottom span{max-width:220px}.section{padding-top:80px;padding-bottom:80px}}
+
+
+/* Image reliability and faithful portrait proportions */
+.hero-classroom{background:#142735;overflow:hidden}
+.hero-background-photo{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:cover;object-position:center 47%;z-index:-2}
+.hero-classroom::before{z-index:-1}
+.hero-classroom-inner{z-index:1}
+.about-portrait{width:min(100%,440px);height:auto;aspect-ratio:auto;object-fit:contain;filter:none;max-height:none}
+@media(max-width:850px){.hero-background-photo{object-position:57% center}}
+@media(max-width:640px){.hero-background-photo{object-position:58% center}.about-portrait{width:100%;max-width:440px;height:auto;aspect-ratio:auto}}
