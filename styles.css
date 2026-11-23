@@ -57,3 +57,10 @@ h2{font-size:clamp(44px,4.6vw,68px);letter-spacing:-.065em}
 .about-portrait{width:min(100%,440px);height:auto;aspect-ratio:auto;object-fit:contain;filter:none;max-height:none}
 @media(max-width:850px){.hero-background-photo{object-position:57% center}}
 @media(max-width:640px){.hero-background-photo{object-position:58% center}.about-portrait{width:100%;max-width:440px;height:auto;aspect-ratio:auto}}
+
+
+/* Refined direct-contact links */
+.contact-direct{display:flex;align-items:center;justify-content:center;gap:14px 32px;flex-wrap:wrap;margin-top:30px}
+.contact-direct a{font-size:13px;font-weight:600;color:#c6d9dc;border-bottom:1px solid #617f85;padding:6px 0;overflow-wrap:anywhere}
+.contact-direct a:hover{color:#fff;border-color:#a5d8d6}
+@media(max-width:640px){.contact-direct{flex-direction:column;gap:12px;margin-top:26px}.contact-actions{gap:11px}.contact-actions .btn{padding:13px 17px}}
