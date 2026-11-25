@@ -30,7 +30,7 @@ if(!reducedMotion.matches && 'IntersectionObserver' in window){
   entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.remove('reveal-pending');entry.target.classList.add('reveal-visible');observer.unobserve(entry.target);}});
  },{threshold:0.08});
  document.documentElement.classList.add('motion-ready');
- document.querySelectorAll('.directory-grid a,.editorial-body h2,.editorial-body p,.countergaze-manifesto,.countergaze-empty,.section-body p,.about-portrait,.about-cinematic .section h2,.credential,.about-journey article,.principle-grid article,.future-grid article').forEach(el=>{
+ document.querySelectorAll('.directory-grid a,.editorial-body h2,.editorial-body p,.countergaze-manifesto,.countergaze-empty,.section-body p,.about-portrait,.about-cinematic .section h2,.credential,.about-journey article,.principle-grid article,.future-grid article,.publication-page .resource-links a,.publication-page .resource-empty,.publication-page .more-lessons').forEach(el=>{
   if(el.getBoundingClientRect().top>window.innerHeight){el.classList.add('reveal-pending');observer.observe(el);}
  });
 }
